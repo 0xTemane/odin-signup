@@ -1,3 +1,8 @@
+@font-face {
+    font-family: "Black Ops One";
+    src: url(./Black_Ops_One_Font/BlackOpsOne-Regular.ttf) format("ttf");
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
