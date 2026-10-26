@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Black Ops One";
-    src: url(./Black_Ops_One_Font/BlackOpsOne-Regular.ttf) format("ttf");
+    src: url(./Black_Ops_One_Font/BlackOpsOne-Regular.ttf);
 }
 
 *, *::before, *::after {
@@ -17,12 +17,12 @@ body {
 }
 
 .left {
-    flex: 1 1 30%;
+    flex: 0 0 30%;
     position: relative;
 }
 
 .right {
-    flex: 1 1 70%;
+    flex: 0 0 70%;
 }
 
 #bg-image-left {
@@ -31,4 +31,25 @@ body {
     z-index: -5;
     height: 100%;
     width: 100%;
+}
+
+.black-caption {
+    position: absolute;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.555);
+    color: white;
+    font-size: 3rem;
+    font-family: "Black Ops One", serif;
+    top: 200px;
+}
+
+#odin-logo {
+    height: 9rem;
 }
