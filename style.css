@@ -40,8 +40,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    min-width: 100%;
-    max-width: 100%;
+    width: 100%;
     padding: 16px;
     background-color: rgba(0, 0, 0, 0.555);
     color: white;
@@ -52,4 +51,21 @@ body {
 
 #odin-logo {
     height: 9rem;
+}
+
+.attribution {
+    position: absolute;
+    width: 100%;
+    bottom: 16px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.attribution > p {
+    text-align: center; 
+}
+
+.attribution > p > a {
+    color: white;
 }
