@@ -9,6 +9,10 @@
     margin: 0;
 }
 
+:root {
+    --gray: #E5E7EB;
+}
+
 body {
     display: flex;
     flex-flow: row nowrap;
@@ -26,12 +30,81 @@ body {
     flex: 0 0 70%;
     display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
     gap: 32px;
 }
 
 h2 {
     font-size: 1.5rem;
     font-weight: 500;
+}
+
+.right > h2 {
+    margin-left: 32px;
+}
+
+form > h2, fieldset > h2 {
+    margin-bottom: 16px;
+}
+
+form, label, input {
+    font-family: inherit;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 32px;
+    box-shadow: 10px 13px 21px 5px rgba(0,0,0,0.58);
+    margin-bottom: 16px;
+}
+
+.fieldset-flex {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 16px;
+}
+
+.input-container {
+    flex: 0 0 34%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+input:not([type="checkbox"]) {
+    border: 2px solid var(--gray);
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+.input-container > label {
+    text-transform: uppercase;
+    color: rgb(67,67,67);
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="password"]:user-invalid {
+    border-color: red;
+}
+
+.checkbox-container {
+    font-size: 1.3rem;
+    text-decoration: underline;
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+button[type="submit"] {
+    border: none;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-left: 32px;
 }
 
 #bg-image-left {
@@ -77,4 +150,14 @@ h2 {
 
 .attribution > p > a {
     color: white;
+}
+
+.login {
+    font-weight: bolder;
+    margin-left: 32px;
+}
+
+.login > a {
+    color: rgb(0, 89, 255);
+    text-decoration: none;
 }
