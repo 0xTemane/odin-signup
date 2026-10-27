@@ -29,6 +29,11 @@ body {
     gap: 32px;
 }
 
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
 #bg-image-left {
     display: block;
     position: absolute;
