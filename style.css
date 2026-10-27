@@ -23,6 +23,9 @@ body {
 
 .right {
     flex: 0 0 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 32px;
 }
 
 #bg-image-left {
