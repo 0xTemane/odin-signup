@@ -22,6 +22,39 @@
             <br>Sign up now to get started!
         </h2>
         <h2>You <em>Know</em> what you have to do.</h2>
+        <form action="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+            <fieldset>
+                <legend><strong>Let's do this!</strong></legend>
+                <div class="input-container">
+                    <label for="first_name">First Name</label>
+                    <input type="text" name="first_name" id="first_name" minlength="2" required>
+                </div>
+                <div class="input-container">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" name="last_name" id="last_name" minlength="2" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div class="input-container">
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" name="phone_number" id="phone_number" minlength="6" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" minlength="8" maxlength="20" required>
+                </div>
+                <div class="input-container">
+                    <label for="confirm_password">Confirm Password</label>
+                    <input type="password" name="confirm_password" id="confirm_password" required minlength="8" maxlength="20">
+                </div>
+            </fieldset>
+            <div class="checkbox-container">
+                <label><input type="checkbox" name="human" id="human" value="YES"> Wait! Are you an human?</label>
+            </div>
+            <button type="submit">Create Account</button>
+        </form>
     </div>
 </body>
 </html>
